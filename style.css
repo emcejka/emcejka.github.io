@@ -2,7 +2,7 @@
 	--primary-text-color: #2F435F; /* Navy */
 }
 
-h1, h4, h6, p{
+h1, h4, h6, p {
 	font-family: 'Inter', sans-serif;
 	color: var(--primary-text-color);
 	text-align: center;
