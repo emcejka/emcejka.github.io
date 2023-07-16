@@ -11,14 +11,23 @@ ol {
 	font-family: 'Inter', sans-serif;
 	color: var(--primary-text-color);
 }
+h1 {
+	font-size: 32px;
+	font-weight: 600;
+}
 h4 {
 	font-size: 24px;
+	font-weight: 500;
 }
 
 h6 {
-	font-size: 18px;
+	font-size: 16px;
+	font-weight: 500;
 }
-
+p, ol {
+	font-size: 16px;
+	font-weight: 400;
+}
 .grand-daddy {
 	width: 100%;
 	display: flex;
