@@ -10,6 +10,7 @@ h1, h4, h6, p {
 ol, dl, dt, dd  {
 	font-family: 'Inter', sans-serif;
 	color: var(--primary-text-color);
+	text-align: left;
 }
 h1 {
 	font-size: 32px;
