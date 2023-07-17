@@ -2,13 +2,14 @@
 	--primary-text-color: #2F435F; /* Navy */
 }
 
-h1, h4, h6, p, .image-caption {
+h1, h2, h4, h6, p, a, .image-caption {
 	font-family: 'Inter', sans-serif;
 	color: var(--primary-text-color);
 	text-align: center;
 	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+	text-decoration: none;
 }
 ol, dl, dt, dd  {
 	font-family: 'Inter', sans-serif;
@@ -23,9 +24,17 @@ ol, dl, dt, dd  {
 }
 h1 {
 	font-size: 32px;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 32px;
 	padding-top: 32px;
+}
+h2 {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 32px;
+	padding-to: 24px;
+	color: #30568c;
+
 }
 h4 {
 	font-size: 24px;
@@ -46,21 +55,25 @@ p {
 img {
 	max-width: 88%;
 	display: block;
-  	margin-left: auto;
+  margin-left: auto;
  	margin-right: auto;
 }
 
 .container {
+	display: flex;
 	width: 100%;
 	margin: auto;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	padding-left: 8px;
-	padding-right: 8px;
 }
 
 .row {
 	display: flex;
+}
+
+.header-row {
+	display: inline-flex;
+	justify-content: space-between;
+	margin-inline: 16px;
+	width: 300px;
 }
 
 .text-container {
@@ -73,7 +86,7 @@ img {
 
 .image-container {
 	flex: 1;
-	display: flex;
+	display: block;
 	justify-content: center;
 	padding-top: 24px;
 	padding-bottom: 24px;
@@ -91,10 +104,9 @@ img {
  }
 
 
-
 .carousel-container {
   position: relative;
-  max-width: 1001px;
+  max-width: 1000;
   height: 643px;
   overflow: hidden;
   margin-left: auto;
@@ -124,22 +136,42 @@ img {
 .prev-btn,
 .next-btn {
   cursor: pointer;
-  padding-left: 12px;
-  padding-right: 12px;
+  display: inline-block;
   padding-top: 4px;
   padding-bottom: 4px;
-  margin-left: 8px;
-  margin-right: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
+  margin-left: 4px;
+  margin-right: 4px;
   font-family: 'Inter', sans-serif;
-  color: #536c91;
   font-weight: 500;
-  background-color: #FFFFFF;
+  color: var(--primary-text-color);
+  font-size: 14px;
+  background-color: white;
   border-radius:4px;
-  border-color: #95a9c7;
+  border-style: solid;
   border-width: 1px;
+  border-color: var(--primary-text-color);
 }
 
 .carousel-controls {
   display: flex;
   justify-content: center;
+}
+
+.button {
+	cursor: pointer;
+  display: flex;
+  justify-content: center;
+  max-width: 120px;
+  padding: 8px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--primary-text-color);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  text-decoration-line: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
 }
