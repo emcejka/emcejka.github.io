@@ -92,12 +92,6 @@ img {
 
 
 
-
-
-
-
-
-
 .carousel-container {
   position: relative;
   max-width: 1001px;
@@ -105,6 +99,8 @@ img {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  border-width: 26px;
+  border-color: var(--primary-text-color);
 
 }
 
