@@ -17,73 +17,165 @@
 
 		<h6> Problem Statement: The current Goodreads app fails to provide its users with an engaging and intuitive experience.</h6>
 
+
+
+		<div class="carousel-container">
+ 			 <div class="carousel-slide">
+			   <img src="imgs/annotated1.png"/>
+			   <img src="imgs/annotated2.png"/>
+			   <img src="imgs/annotated3.png"/>
+			   <img src="imgs/annotated4.png"/>
+			   <img src="imgs/annotated5.png"/>
+			 </div>
+		 <button class="prev-btn" onclick="changeSlide(-1)">Previous</button>
+		 <button class="next-btn" onclick="changeSlide(1)">Next</button>
+		</div>
+
+
+
+
 		<iframe width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&amp;url=https%3A%2F%2Fwww.figma.com%2Fproto%2F70B5TMloQ1LHYKeIUNnD2T%2FAnnotated-Screens%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-187%26viewport%3D382%252C350%252C0.07%26t%3DYwnsaKB6NoYM4bHf-1%26scaling%3Dscale-down%26mode%3Ddesign" allowfullscreen></iframe>
 
 		<h4>Research</h4>
 		<h6>Key Insights</h6>
-		<p>Survey results from 24 Goodreads app users</p>
-		<p>Only 16% of users utilize Goodreads’ social features.</p>
-		<p>When asked what improvements they might make to the app, 36% of survey participants shared sentiments about improving or adding more social features.</p>
-		<p>Based on the results, either they wanted different social features OR they didn’t even realize there are already existing features for this. (I was inclined to believe the latter, considering that almost all of them are hidden when you open the app to the home page.)</p>
-		<img src="imgs/socialquotes.png"/>
+
+		<div class="container">
+			<div class="row">
+				<div class="text-container">
+					<p>Survey results from 24 Goodreads app users</p>
+					<p>Only 16% of users utilize Goodreads’ social features.</p>
+					<p>When asked what improvements they might make to the app, 36% of survey participants shared sentiments about improving or adding more social features.</p>
+					<p>Based on the results, either they wanted different social features OR they didn’t even realize there are already existing features for this. (I was inclined to believe the latter, considering that almost all of them are hidden when you open the app to the home page.</p>
+				</div>
+				<div class="image-container">
+					<img src="imgs/socialquotes.png"/>
+				</div>
+			</div>
+		</div>
 		<p>When asked about how easy it was to navigate the app, an overwhelming majority felt it was somewhat easy, or at the very least, a neutral experience.</p>
-		<img src="imgs/graph.png"/>
-		<p>However, when given the opportunity to suggest improvements, 43% of users cited that the app was difficult to navigate and contained many “hidden” features.</p>
-		<p>This lead me to believe that despite goodreads actually being difficult to use, many have used it for long enough that they've become used to the clunky nature of the app.</p>
-		<img src="imgs/usabilityquotes.png"/>
+		<img src="imgs/graph.png" width="500px"/>
+
+		<div class="container">
+			<div class="row">
+				<div class="text-container">
+					<p>However, when given the opportunity to suggest improvements, 43% of users cited that the app was difficult to navigate and contained many “hidden” features.</p>
+					<p>This lead me to believe that despite goodreads actually being difficult to use, many have used it for long enough that they've become used to the clunky nature of the app.</p>
+				</div>
+				<div class="image-container">
+					<img src="imgs/usabilityquotes.png"/>
+				</div>
+			</div>
+		</div>
 		<p>After hearing from users, part of me felt it would be wiser to start from scratch with a total overhaul. However, Goodreads is still the most popular of all reading community apps, and overhauling the app could have potential fallout with its dedicated customer base. Instead, I chose to focus on some impactful changes in features — an evolution of the product — to foster a stronger sense of community on the platform.</p>
 		<h6>Goals</h6>
 		<ol>
-			<li>Simplify the app’s search function — one search bar to rule them all.</li>
+			<li>Simplify the app’s search function — one search bar to rule them all. </li>
 			<li>Prioritize the underutilized group function – create an experience that encourages user-to-user interaction.</li>
 			<li> Allow users to share updates as they read a book – not just when they finish it.</li>
 		</ol>
 		<h4>Wireframes</h4>
 		<p>I knew I wanted the app to still feel familiar, but I also knew a few features would require a more thorough redesign. Specifically, posting to a group page and seeing other user updates there should be a much easier process. I took inspiration from popular text-based social media sites such as Reddit and Twitter, getting rid of the many steps it takes to create a post in a group. Instead, I wanted to allow the user to contribute in multiple ways: directly to the group as a whole, but also within discussion groups for more specific conversations that users can explore. A new and improved homepage would also include a banner of the user's own groups, leading the user within the app to participate in group features.</p>
-		<img src="imgs/groupsketches.png"/>
+
+		<div class="image-container">
+			<img src="imgs/groupsketches.png"/>
+		</div>
+
 		<p>Previously, if you had thoughts or wanted to update your progress on your current read, it was a private feature that only you could view. However, the evolved version would encourage users to update their progress immediately after opening the app, creating a status update as opposed to a private note. You can update your progress and post your thoughts on your current read directly from the homepage. </p>
-		<img src="imgs/feedsketches.png"/>
+
+		<div class="image-container">
+			<img src="imgs/feedsketches.png"/>
+		</div>
+
 		<p>To also help guide the user and remove the paralysis of choice, it was easy to combine several screens and place them under the profile icon within the information architecture. Most of the icons were already in multiple places within the app and were adding to the clutter and confusion that users might have when attempting to achieve a goal.</p>
-		<img src="imgs/profilesketches.png"/>
+
+		<div class="image-container">
+			<img src="imgs/profilesketches.png"/>
+		</div>
+
 		<p>Having the search bar on almost every page, in addition to having a search icon in the navigation bar was overkill. Instead, the search bar is only on the discovery page. I played around with various layouts for the page to see what would be most effective in creating a more personalized and comprehensive experience.</p>
-		<img src="imgs/discoversketches.png"/>
+
+		<div class="image-container">
+			<img src="imgs/discoversketches.png"/>
+		</div>
+
 		<h6>Statistics Page</h6>
 		<p>In my early iterations, I considered adding a "stats" page inspired by Spotify's "wrapped" series and based on feedback from the survey, people wanted an easily digestible summary of their reading data. However, during the research phase, I recognized the need to prioritize streamlining existing features before discussing new ones.</p>
-		<img src="imgs/statssketches.jpeg"/>
+
+		<div class="image-container">
+			<img src="imgs/statssketches.jpeg"/>
+		</div>
+
 		<p>Once I had sketched out some options, I used Miro to create some low-fidelity mockups. In this phase, I was able to get a better idea of how each page would look and function as part of the user's journey through various tasks. </p>
-		<img src="imgs/groupslofi.png"/>
-		<img src="imgs/updatelofi.png"/>
+
+		<div class="image-container">
+			<img src="imgs/groupslofi.png"/>
+		</div>
+
+		<div class="image-container">
+			<img src="imgs/updatelofi.png"/>
+		</div>
+
 		<p>designing the search feature, I had originally come up with tabs that represented different result categories. But after looking through other apps that rely heavily on search capabilities, many of them first gave the user an overview of the top results, then allowed the user to filter the results (should they choose to). I took inspiration from Spotoify's desktop search results, too, to create search results that would allow the user to see the best matches at a glance.</p>
 		<h6>Option 1</h6>
-		<img src="imgs/searchlofi.png"/>
+
+		<div class="image-container">
+			<img src="imgs/searchlofi.png"/>
+		</div>
+
 		<h6>Option 2 (Solution)</h6>
-		<img src="imgs/searchlofi2.png"/>
+
+		<div class="image-container">
+			<img src="imgs/searchlofi2.png"/>
+		</div>
+
 		<h4>Design System</h4>
-		<img src="imgs/designsystem.png"/>
+
+		<div class="image-container">
+			<img src="imgs/designsystem.png"/>
+		</div>
+
 		<h6>Feed Updates: Before and After</h6>
 		<p>The feed got a new look, most notably making a text-based experience more visual. Small changes also push users towards more engagement with their peers, as well; for example, previously, when you saw books in the feed, the marked stars would be your own rating of the book rather than your friend's. Now, with the update, we can assert the homepage as a place to see updates from friends rather than as a secondary discover page.</p>
-		<img src="imgs/feedupdate.png"/>
+
+		<div class="image-container">
+			<img src="imgs/feedupdate.png"/>
+		</div>
+
 		<h4>Design Deliverables: Before and After</h4>
 		<h6>Home Page</h6>
 		<p>Instead of a feed filled with automated messages, the new design allows for a more personal experience where the user can easily engage with their friends in all aspects of their reading experience. Users are encouraged to update their profile as they go through a book rather than just marking it complete and throwing a rating on it. Groups are now easily accessible from the get-go and removing the search bar from this page allows the user to focus more on engaging with others.</p>
-		<img src="imgs/homefinal.png"/>
+
+		<div class="image-container">
+			<img src="imgs/homefinal.png"/>
+		</div>
+
 		<h6>Group Page</h6>
 		<p>Unfortunately, Groups had an entirely different look from the rest of the app. To unify the experience, I brought in patterns that are used across the rest of the app, getting rid of the bare-bones, second-rate approach given to Groups. Instead of only being able to post within a discussion, users can now easily post to the general group OR further refine their audience within a discussion group. The post button is easily accessible on the group page and when you join a discussion, and users can search keywords to find posts that better match their interests. You can also now share groups with your friends, making it easy to share your interests with people on the app and in your own life.</p>
-		<img src="imgs/groupfinal.png"/>
+
+		<div class="image-container">
+			<img src="imgs/groupfinal.png"/>
+		</div>
+
 		<h6>Discover Page</h6>
 		<p>Combining the search and discovery page creates a central location for all book discovery tools, simplifying a user's journey to discover new books and allowing them to have more opportunities to take advantage of the many other features offered.</p>
 		<p> Instead of having headers and lists that take you to the goodreads website through an external link, the new discover page focuses on giving users quality recommendations based on their reading history and allowing them to explore genres, books, authors, and other users all in one place.</p>
-		<img src="imgs/searchfinal.png"/>
+
+		<div class="image-container">
+			<img src="imgs/searchfinal.png"/>
+		</div>
+
 		<h6>User Profile</h6>
 		<p>I simplified user Profiles by using a more consistent color scheme across all elements, bringing in patterns from the rest of the app. I got rid of unnecessary steps such as clicking through the "more" button to select another option and toggling between about and updates, opting for instead one feed for a user to easily scroll through.</p>
-		<img src="imgs/profilefinal.png"/>
+
+		<div class="image-container">
+			<img src="imgs/profilefinal.png"/>
+		</div>
+
 		<h6>Explore the full designs here!</h6>
 		<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F06oaUXyK2VRDIOS1qjXoBP%2FGoodreads-Redesign%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DIFsX5Rv0vTGPt9c3-1" allowfullscreen></iframe>
 		<h4>Reflections</h4>
 		<p>While I only focused on a few changes to increase the app's usability, I know there is much more that could be done with the support of a larger team. Being able to collaborate with others who share your objective, while still focusing on the part you play within the group, would be invaluable when it comes to making thoughtful and user-centered design decisions.
 		<p>This was also my first time formally conducting user research and I learned a lot about what to ask people, and more importantly, how to ask them. If I continued this project, I would love to take my research a step further and conduct usability testing to see how the changes I made are received by users.</p>
-
-
 
 	</body>
 </html>
