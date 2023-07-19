@@ -63,17 +63,27 @@ img {
 	display: flex;
 	width: 100%;
 	margin: auto;
+	justify-content: center;
 }
 
 .row {
 	display: flex;
 }
 
+.icon-row {
+	display: flex;
+	justify-content: space-between;
+	margin-inline: 16px; 
+	justify-content: center;
+	margin-top: 32px;
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
 .header-row {
 	display: inline-flex;
 	justify-content: space-between;
 	margin-inline: 16px;
-	width: 300px;
 }
 
 .text-container {
@@ -103,7 +113,6 @@ img {
 	padding-top: 8px;
  }
 
-
 .carousel-container {
   position: relative;
   max-width: 1000;
@@ -111,7 +120,6 @@ img {
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .carousel-slide {
@@ -165,6 +173,8 @@ img {
   justify-content: center;
   max-width: 120px;
   padding: 8px 16px;
+  margin-top: 32px;
+  margin-bottom: 16px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primary-text-color);
