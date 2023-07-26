@@ -59,6 +59,18 @@ img {
  	margin-right: auto;
 }
 
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+.header-item {
+	min-width: 100px;
+}
+
 .container {
 	display: flex;
 	width: 100%;
