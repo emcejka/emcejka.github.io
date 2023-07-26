@@ -50,13 +50,19 @@ h6 {
 p {
 	font-size: 16px;
 	font-weight: 400;
-	line-height: 32px;
+	line-height: 24px;
 }
 img {
 	max-width: 88%;
 	display: block;
   margin-left: auto;
  	margin-right: auto;
+}
+
+.profile-pic {
+	min-width: 200px;
+	padding-top: 16px;
+	padding-bottom: 16px;
 }
 
 .header-container {
@@ -87,9 +93,14 @@ img {
 	justify-content: space-between;
 	margin-inline: 16px; 
 	justify-content: center;
-	margin-top: 32px;
+	margin-top: 24px;
 	margin-left: 16px;
 	margin-right: 16px;
+	margin-bottom: 56px;
+}
+
+.icon-row img {
+	width: 32px;
 }
 
 .header-row {
@@ -186,7 +197,7 @@ img {
   max-width: 120px;
   padding: 8px 16px;
   margin-top: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primary-text-color);
