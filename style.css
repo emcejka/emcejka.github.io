@@ -72,7 +72,7 @@ p {
 	line-height: 24px;
 }
 img {
-	max-width: 88%;
+	max-width: 100%;
 	display: block;
   margin-left: auto;
  	margin-right: auto;
@@ -108,6 +108,13 @@ img {
 	display: flex;
 	align-items: center;
 	width: 80%;
+}
+
+.more-row {
+	display: inline-flex;
+	align-items: left;
+	width: 80%;
+	max-width: 300px;
 }
 
 .icon-row {
@@ -242,6 +249,16 @@ img {
   position: relative;
   display: inline-block;
   margin-top: 32px;
+}
+
+.project-card img {
+	width: 80%;
+}
+
+.card-row {
+	display: inline-flex;
+	justify-content: flex-start;
+	width: 40%;
 }
 
 .overlay {
