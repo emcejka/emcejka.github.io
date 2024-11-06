@@ -9,8 +9,8 @@ h1, h2, h4, h6, p, a, .image-caption {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
     text-decoration: none;
 }
 ol, dl, dt, dd  {
@@ -23,12 +23,12 @@ ol, dl, dt, dd  {
     line-height: 32px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 ol.centered-list {
-    margin: 56px, auto;
+    margin: 24px, auto;
     list-style-position: inside;
     display: flex;
     flex-direction: column;
@@ -42,21 +42,21 @@ ol.centered-list li{
 }
 
 h1 {
-    font-size: 32px;
-    font-weight: 500;
+    font-size: 36px;
+    font-weight: 800;
     line-height: 32px;
     margin-top: 32px;
 }
 h2 {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 800;
     line-height: 32px;
     margin-top: 24px;
     color: #30568c;
 
 }
 h4 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 24px;
 }
@@ -122,7 +122,7 @@ img {
     justify-content: space-between;
     margin-inline: 16px; 
     justify-content: center;
-    margin-top: 24px;
+    margin-top: 16px;
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 56px;
@@ -141,7 +141,7 @@ img {
 .text-container {
     flex: 1;
     padding-top: 8px;
-    padding-bottom: 24px;
+    padding-bottom: 16px;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -152,8 +152,8 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -195,7 +195,7 @@ img {
 .carousel-controls {
   display: flex;
   justify-content: center;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   
 }
 
