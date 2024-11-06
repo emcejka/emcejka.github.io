@@ -98,10 +98,11 @@ img {
 
 .container {
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    width: 20%%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .row {
@@ -249,10 +250,13 @@ img {
   position: relative;
   display: inline-block;
   margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+
 }
 
 .project-card img {
-    width: 80%;
+    width: 400px;
 }
 
 .card-row {
