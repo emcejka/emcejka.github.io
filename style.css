@@ -1,286 +1,97 @@
-:root {
-	--primary-text-color: #2F435F; /* Navy */
-}
-
-h1, h2, h4, h6, p, a, .image-caption {
-	font-family: 'Inter', sans-serif;
-	color: var(--primary-text-color);
-	text-align: center;
-	max-width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-decoration: none;
-}
-ol, dl, dt, dd  {
-	font-family: 'Inter', sans-serif;
-	color: var(--primary-text-color);
-	text-align: left;
-	max-width: 100%;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 32px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-ol.centered-list {
-	margin: 56px, auto;
-	list-style-position: inside;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	max-width: 80%;
-}
-
-ol.centered-list li{
-	margin-top: 8px;
-	margin-bottom: 8px;
-}
-
 h1 {
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 32px;
-	margin-top: 32px;
+    font-size: 36px; /* Slightly larger */
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 32px;
+    color: #2F435F;
 }
+
 h2 {
-	font-size: 32px;
-	font-weight: 600;
-	line-height: 32px;
-	margin-top: 24px;
-	color: #30568c;
-
-}
-h4 {
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #30568c; /* Stands out but balanced */
+    margin-top: 28px;
 }
 
-h6 {
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 24px;
+h4, h6 {
+    color: #2F435F;
+    margin-top: 16px;
 }
+
 p {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-}
-img {
-	max-width: 100%;
-	display: block;
-  margin-left: auto;
- 	margin-right: auto;
-}
-
-.profile-pic {
-	min-width: 200px;
-	padding-top: 16px;
-	padding-bottom: 16px;
-}
-
-.header-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-left: 24px;
-	padding-right: 24px;
-}
-
-.header-item {
-	min-width: 100px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 16px;
+    max-width: 80%; /* Improved readability */
 }
 
 .container {
-	display: flex;
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
+    max-width: 90%; /* More responsive */
+    padding: 0 24px; /* Consistent padding */
 }
 
-.row {
-	display: flex;
-	align-items: center;
-	width: 80%;
+.row, .image-container, .card-row {
+    width: 100%; /* Matches overall layout */
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 16px 0;
 }
 
-.more-row {
-	display: inline-flex;
-	align-items: left;
-	width: 80%;
-	max-width: 300px;
+.centered-list {
+    max-width: 70%;
+    text-align: center;
+    margin: 24px auto;
 }
 
-.icon-row {
-	display: flex;
-	justify-content: space-between;
-	margin-inline: 16px; 
-	justify-content: center;
-	margin-top: 24px;
-	margin-left: 16px;
-	margin-right: 16px;
-	margin-bottom: 56px;
+.button, .prev-btn, .next-btn {
+    color: #2F435F;
+    background-color: white;
+    border-color: #2F435F;
 }
 
-.icon-row img {
-	width: 32px;
+.button:hover, .prev-btn:hover, .next-btn:hover {
+    background-color: #2F435F;
+    color: white;
 }
 
-.header-row {
-	display: inline-flex;
-	justify-content: space-between;
-	margin-inline: 16px;
+a {
+    color: #30568c;
+    transition: color 0.2s;
 }
 
-.text-container {
-	flex: 1;
-	padding-top: 8px;
-	padding-bottom: 24px;
-	padding-left: 8px;
-	padding-right: 8px;
+a:hover {
+    color: #4C5C92;
 }
 
-.image-container {
-	flex: 1;
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	padding-left: 8px;
-	padding-right: 8px;
+h1, h2, h4, h6, p {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.image-container img {
-	max-width: 100%;
+.icon-row, .image-caption, .carousel-controls {
+    margin: 0 auto;
+    padding: 16px 8px;
+
 }
 
-.image-caption{ 
-	color: #4C5C92;
-	font-size: 14px;
-	font-weight: 400;
-	text-align: left;
-	margin-left: 40px;
-	margin-top 8px;
- }
-
-.carousel-container {
-  position: relative;
-  max-width: 1000px;
-  height: 643px;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
+:root {
+    --font-size-base: 16px;
 }
 
-.carousel-slide {
-  display: flex;
-  width: 100%;
-  height:100%;
+h1, h2, h4, h6, p, a {
+    font-family: 'Inter', sans-serif;
+    font-size: calc(var(--font-size-base) * 1);
+    color: var(--primary-text-color);
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.carousel-slide img {
-  object-fit: cover;
-  height: auto;
-  max-width: 100%;
+ol, dl, dt, dd {
+    font-size: calc(var(--font-size-base) * 0.9);
 }
 
-.carousel-controls {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 24px;
-  
-}
-
-.prev-btn,
-.next-btn {
-  cursor: pointer;
-  display: inline-block;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 14px;
-  padding-right: 14px;
-  margin-left: 4px;
-  margin-right: 4px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  color: var(--primary-text-color);
-  font-size: 14px;
-  background-color: white;
-  border-radius:4px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: var(--primary-text-color);
-}
-
-.carousel-controls {
-  display: flex;
-  justify-content: center;
-}
-
-.button {
-	cursor: pointer;
-  display: flex;
-  justify-content: center;
-  max-width: 120px;
-  padding: 8px 16px;
-  margin-top: 32px;
-  margin-bottom: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--primary-text-color);
-  font-family: 'Inter', sans-serif;
-  font-weight: 500;
-  text-decoration-line: none;
-  color: white;
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-
-.project-card {
-  position: relative;
-  display: inline-block;
-  margin-top: 32px;
-}
-
-.project-card img {
-	width: 80%;
-}
-
-.card-row {
-	display: inline-flex;
-	justify-content: flex-start;
-	width: 40%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease; 
-}
-
-.project-title {
-  font-size: 24px;
-  font-family: 'Inter', sans-serif;
-  color: var(--primary-text-color);
-  font-weight: 500;
-}
-
-.project-card:hover .overlay {
-  opacity: 1;
